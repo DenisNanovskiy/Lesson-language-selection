@@ -4,6 +4,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
+#Здесь используется пакет webdriver_manager для удобной установки драйверов
+#pip install webdriver_manager
 
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default='chrome',
